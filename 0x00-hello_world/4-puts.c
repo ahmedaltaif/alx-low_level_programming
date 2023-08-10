@@ -2,11 +2,7 @@
 
 int main(void)
 {
-	/**
-	 * functuction to print wit puts
-	 *
-	 */
-
+	/* this prototype */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 
