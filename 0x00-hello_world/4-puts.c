@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 /**
- *
- * Main - Entry point
+ * main - Entry point
  *
  * Description: print woth puts
  *
  * Return: Always 0 (Success)
- * 
- */
+*/
+
 
 int main(void)
 {
