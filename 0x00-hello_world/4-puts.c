@@ -1,15 +1,17 @@
 #include <stdio.h>
-/*
+
+/**
  *
+ * Main - Entry point
  *
- * ahmed altaif
+ * Description: print woth puts
  *
- *
+ * Return: Always 0 (Success)
+ * 
  */
 
 int main(void)
 {
-	/* this prototype */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 
