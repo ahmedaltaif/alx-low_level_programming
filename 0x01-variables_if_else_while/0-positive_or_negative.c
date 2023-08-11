@@ -13,17 +13,17 @@ int main(void)
 	/* your code goes there */
     if ( n > 0)
     {
-        printf("is positive\n");
+        printf(" %c is positive\n");
     }
 
     if ( n == 0)
     {
-        printf("is zero\n");
+        printf(" %c is zero\n");
     }
 
     if ( n < 0)
     {
-        printf("is negative\n");
+        printf(" %c is negative\n");
     }
     
 	return (0);
