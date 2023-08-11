@@ -4,7 +4,7 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - printf numper ngative or not 
+ * main - printf numper ngative or not
  *
  *
  * Return: Always 0
