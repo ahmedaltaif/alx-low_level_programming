@@ -7,9 +7,11 @@
 */
 
 
-int main(void) {
+int main(void) 
+{
 
 	char hn;
+    
 	for (hn = 'a' ; hn <= 'z' ; hn++)
 	{
 		putchar(hn);
