@@ -12,7 +12,7 @@ int main(void)
 
 	int a;
 
-	for (a = '0' ; a <= '9' ; num++)
+	for (a = '0' ; a <= '9' ; a++)
 	{
 		putchar(num);
         if (a != 9)
