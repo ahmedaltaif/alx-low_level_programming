@@ -3,6 +3,8 @@
 /**
 * _islower - print lowercase char
 *
+* c is intered value
+*
 * Return: Always 0
 */
 
