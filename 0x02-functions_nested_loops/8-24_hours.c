@@ -4,11 +4,11 @@
  * jack_bauer - prints every minute
  *
  */
- 
+
 void jack_bauer(void)
 {
 	int hu;
-    int mu;
+	int mu;
 
 	hu = 0;
 
