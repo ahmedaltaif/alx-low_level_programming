@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _islower - print lowercase char
+* _isalpha - check for alpapet
 *
 * @c: is intered value
 *
@@ -11,17 +11,10 @@
 int _isalpha(int c)
 {
 
-	if (c >= 65 && c <= 122)
+	if (c >= 65 && c <= 90) || (c >= 97 && c <= 122)
 	{
-        if (c >= 66 && c <= 96)
-        {
-		    return (0);
-            
-        }
-        else 
-        {
-            return (1);
-        }
+		return (1);
 	}
-    return (0);
+
+	return (0);
 }
