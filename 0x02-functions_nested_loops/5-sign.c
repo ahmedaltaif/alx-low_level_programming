@@ -3,7 +3,7 @@
 /**
 * print_sign - check num
 *
-* @c: is intered value
+* @n: is intered value
 *
 * Return: Always 0
 */
