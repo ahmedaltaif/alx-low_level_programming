@@ -3,6 +3,7 @@
 /**
 * _abs - print abs num
 *
+* @d: is intered value
 *
 * Return: Always 0
 */
