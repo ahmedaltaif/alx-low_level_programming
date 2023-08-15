@@ -13,7 +13,7 @@ void times_table(void)
 	for (a = 0; a < 10; a++)
 	{
 		for (h = 0; h < 10; h++)
-		
+        {
 			m = h * a;
 			if (h == 0)
 			{
