@@ -12,27 +12,27 @@ void print_to_98(int n)
 
 	if (n == 98)
 	{
-		printf("98");
+		_putchar('98');
 	}
 	else if (n < 98)
 	{
 		for (a = n ; a <= 98 ; a++)
 		{
-			printf("%d", a);
+			_putchar("%d", a);
 			if (a < 98)
-				printf(", ");
+                _putchar(", ");
 		}
 	}
 	else if (n > 98)
 	{
 		for (a = n ; a >= 98 ; a--)
 		{
-			printf("%d", a);
+			_putchar("%d", a);
 			if (a > 98)
-				printf(", ");
+				_putchar(", ");
 
 		}
 	}
-	printf("\n");
+	_putchar("\n");
 }
 
