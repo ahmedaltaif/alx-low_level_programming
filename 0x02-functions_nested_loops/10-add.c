@@ -2,16 +2,12 @@
 
 /**
  * add -  adds two integers and returns the result
- * @a: int
  * @b: int
- * @c: is the result a+b
- * Return: Integer value
+ * @a: int
+ * Return add result
  */
 
 int add(int a, int b)
 {
-	int c;
-
-	c = a + b;
-	return (c);
+	return (a + b);
 }
