@@ -8,16 +8,16 @@
 int main(void)
 {
 	int a;
-    int b;
+	int b;
 
-	 while ( a < 1024)
+	 while (a < 1024)
 	{
-		if (( a % 3 == 0) || (a % 5 == 0))
+		if ((a % 3 == 0) || (a % 5 == 0))
 		{
 			b += a;
 		}
 
-		 a++;
+		a++;
 	}
 
 	printf("%d\n", b);
