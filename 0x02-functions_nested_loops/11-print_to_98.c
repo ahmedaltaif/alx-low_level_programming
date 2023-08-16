@@ -18,8 +18,8 @@ void print_to_98(int n)
 		    _putchar(' ');
 	    }
     }
-    
-    if (n < 08)
+
+    if (n < 98)
     {
 	    for (c = n; c <= 98; c++)
 	    {
