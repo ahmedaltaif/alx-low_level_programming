@@ -2,9 +2,9 @@
 
 /**
  * print_times_table - prints the n times table,
- * @n: number of the times table
- *
- */@n: number of table
+ * 
+ *@n: number of table
+ */
 void print_times_table(int n)
 {
 	int a;
