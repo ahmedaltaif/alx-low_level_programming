@@ -9,9 +9,9 @@
 int main(void)
 {
     int i;
-	int a = 0;
-	int b = 1;
-	int c;
+	unsigned long  a = 0;
+	unsigned long  b = 1;
+	unsigned long  c;
 
 	for (i = 1; i <= 50; i++)
 		{	
@@ -23,16 +23,15 @@ int main(void)
 			if (i == 49)
 			{
 				printf('\n');
-            }
-            else 
-            {
-                printf (', ');
-            }
+			}
+			else 
+			{
+				printf (', ');
+			}
 
 
-	    } 
+		} 
 
 	return (0);
 
 }
-
