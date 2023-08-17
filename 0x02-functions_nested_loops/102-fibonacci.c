@@ -13,11 +13,11 @@ int main(void)
 	int b = 1;
 	int c;
 
-	for (i = 1, i <= 50; i++)
+	for (i = 1; i <= 50; i++)
 		{	
 			
     		c = a + b; 
-			printf ('%d', c);
+			printf ('%lu', c);
 			a = b;
 			b = c;
 			if (i == 49)
