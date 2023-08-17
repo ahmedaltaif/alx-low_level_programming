@@ -9,31 +9,23 @@
 int main(void)
 {
 	int i;
-	unsigned long  a = 0;
-	unsigned long  b = 1;
-	unsigned long  c;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long c = 3;
 
-	for (i = 1; i <= 48; i++)
-		{
-			c = a + b;
-			
-			printf ("%ld", c);
+	printf("1, 2, ");
+	for (i = 0; i < 48; i++)
+	{
+		c = a + b;
+		printf("%ld", c);
+		a = b;
+		b = c;
 
-			a = b;
-			b = c;
-
-			if (i == 47)
-			{
-				printf("\n");
-			}
-
-			else 
-			{
-				printf (", ");
-			}
-
-
-		} 
+		if (i != 47)
+			printf(", ");
+	}
+    
+	printf("\n");
 
 	return (0);
 
