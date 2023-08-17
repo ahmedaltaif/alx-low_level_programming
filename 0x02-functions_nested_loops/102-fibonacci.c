@@ -13,7 +13,7 @@ int main(void)
 	unsigned long  b = 1;
 	unsigned long  c;
 
-	for (i = 1; i <= 49; i++)
+	for (i = 1; i <= 48; i++)
 		{
 			c = a + b;
 			
@@ -22,11 +22,11 @@ int main(void)
 			a = b;
 			b = c;
 
-			if (i == 49)
+			if (i == 47)
 			{
 				printf("\n");
 			}
-            
+
 			else 
 			{
 				printf (", ");
