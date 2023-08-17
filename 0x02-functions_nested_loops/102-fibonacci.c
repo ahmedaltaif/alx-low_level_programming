@@ -17,16 +17,16 @@ int main(void)
 		{	
 			
     		c = a + b; 
-			printf ('%ld', c);
+			printf ("%ld", c);
 			a = b;
 			b = c;
 			if (i == 49)
 			{
-				printf('\n');
+				printf("\n");
 			}
 			else 
 			{
-				printf (', ');
+				printf (", ");
 			}
 
 
