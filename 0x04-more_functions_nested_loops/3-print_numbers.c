@@ -2,20 +2,18 @@
 
 /**
  * print_numbers -  prints the numbers, from 0 to 9
- * @i: intger
+ * @a: intger
  * Return: Always 0.
  */
 
 void print_numbers(void)
 {
-	int i;
+	int a;
 
-	for (i >= '0'; i <= '9'; i++)
+	for (a >= 0; a <= 9; a++)
 	{
-		_putchar(i);
-		_putchar("\n");
+		_putchar(a);
 	}
-
-	return (0);
+	_putchar("\n");
 
 }
