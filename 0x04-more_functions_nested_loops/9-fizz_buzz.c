@@ -20,14 +20,16 @@ int main(void)
 		{
 			pritf("Buzz");
 		}
-		else if (i % 5 == 0 && i % 3 == 0)
+		else if (i % 15 == 0)
 		{
 			pritf("FizzBuzz");
 		}
 		else
 		{
-			printf(i);
+			printf("%i", i);
 		}
 		_putchar('\n');
 	}
+
+return (0);
 }
