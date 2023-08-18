@@ -9,15 +9,14 @@
 
 int main(void)
 {
-	long a = 612852475143;
-	int i;
-	for (i = (int) sqrt(a); i > 2; i++)
+	unsigned long int a;
+    unsigned long int b = 612852475143;
+
+	for (a = 3; a < 782849; a = a + 2)
 	{
-		if (a % i == 0)
-		{
-			printf("%d\n", i);
-			break;
-		}
+		while ((b % a == 0) && (b != a))
+			b = b / a;
 	}
+	printf("%lu\n", b);
 	return (0);
 }
