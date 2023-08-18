@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_square - function that prints a square, followed by a new line.
+ * main - Fizz-Buzz test
  *
  * Return: Always 0.
  */
@@ -23,4 +23,6 @@ int main(void)
 		if (i < 100)
 			printf(" ");
 	}
+    printf("\n");
+	return (0);
 }
