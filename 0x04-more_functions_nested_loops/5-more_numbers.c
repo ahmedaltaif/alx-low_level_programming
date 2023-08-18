@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers -  prints the numbers, from 0 to 9
+ * more_numbers - prints 10 times the numbers, from 0 to 14
  *
  * Return: Always 0.
  */
@@ -9,17 +9,16 @@
 void more_numbers(void)
 {
 	int a;
-	int i;
+	int b;
 
-	for (i = '1'; i <= '10'; i++)
+	for (a = 1; a <= 10; a++)
 	{
-		for (a = '0'; a <= '14'; a++)
+		for (b = 0; b <= 14; b++)
 		{
-			if (a >= 10)
+			if (b >= 10)
 			_putchar('1');
-			_putchar(a % 10 + '0');
+			_putchar(b % 10 + '0');
 		}
-	_putchar('\n');
-	}
-
+			_putchar('\n');
+		}
 }
