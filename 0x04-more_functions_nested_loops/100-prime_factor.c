@@ -9,8 +9,8 @@
 
 int main(void)
 {
-	long int a = 612852475143;
-	long int i;
+	long a = 612852475143;
+	int i;
 	for (i = (int) sqrt(a); i > 2; i++)
 	{
 		if (a % i == 0)
