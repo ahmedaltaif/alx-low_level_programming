@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 10 times the numbers, from 0 to 14
+ * print_line - a function that draws a straight line in the terminal.
  *
  * Return: Always 0.
  */
