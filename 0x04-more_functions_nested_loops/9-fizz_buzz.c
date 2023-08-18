@@ -10,26 +10,17 @@ int main(void)
 {
 	int i;
 
-	for (i = 1; i <= 100 ; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
-		{
-			pritf("Fizz");
-		}
+		if (i % 15 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
 		else if (i % 5 == 0)
-		{
-			pritf("Buzz");
-		}
-		else if (i % 15 == 0)
-		{
-			pritf("FizzBuzz");
-		}
+			printf("Buzz");
 		else
-		{
 			printf("%i", i);
-		}
-		_putchar('\n');
+		if (i < 100)
+			printf(" ");
 	}
-
-return (0);
 }
