@@ -12,11 +12,11 @@ void print_rev(char *s)
 	int a = 0;
 	int b;
 	int c;
-	
+
 	while (*(s + a) != '\0')
 	{
 		a++;
-		
+
 	}
 
 	c = a;
