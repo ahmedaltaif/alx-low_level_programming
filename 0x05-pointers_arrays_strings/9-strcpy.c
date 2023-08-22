@@ -7,6 +7,7 @@
 * @src: char
 * @dest: char
 *
+* Description: opies the string pointed to by src.
 */
 char *_strcpy(char *dest, char *src)
 {
