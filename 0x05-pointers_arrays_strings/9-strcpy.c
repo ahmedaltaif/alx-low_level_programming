@@ -4,14 +4,14 @@
 * *_strcpy - opies the string pointed to by src
 *
 *
-* @src: char 
-* @dest: char 
+* @src: char
+* @dest: char
 *
 */
 char *_strcpy(char *dest, char *src)
 {
-    int b;
-    int a =0;
+	int b;
+	int a =0;
 
 	while (src[a] != '\0')
 	{
