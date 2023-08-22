@@ -15,7 +15,7 @@ void rev_string(char *s)
 	int b = 0;
 	char str;
 
-	
+
 	while (s[c] != '\0')
 	{
 		c++;
@@ -29,5 +29,5 @@ void rev_string(char *s)
 		s[a] = s[b];
 		s[b--] = str;
 	}
-	
+
 }
