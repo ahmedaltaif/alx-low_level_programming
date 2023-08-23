@@ -19,13 +19,13 @@ void puts_half(char *str)
 		a++;
 	}
 
-	
+
 	if ((a % 2) == 0 )
 	{
 		for (i = a/2; i < a; i++)
 		{
 		_putchar(str[i]);
-		
+
 
 		}
 
@@ -35,7 +35,7 @@ void puts_half(char *str)
 		for ((i = ((a-1)/2)); i < a; i++)
 		{
 		_putchar(str[i]);
-		
+
 
 		}
 	}
