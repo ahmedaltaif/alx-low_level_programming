@@ -17,19 +17,19 @@ int _atoi(char *s)
 	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
-        {
-			    m *= -1;
-        }
+		{
+				m *= -1;
+		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			    sum *= 10;
-			    sum  -= (s[i] - '0');
-			    b = 1;
+				sum *= 10;
+				sum  -= (s[i] - '0');
+				b = 1;
 		}
 		else if (b == 1)
-        {
-			    break;
-        }
+		{
+				break;
+		}
 		i++;
 	}
 	sum *= m;
