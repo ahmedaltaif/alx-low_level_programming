@@ -10,28 +10,15 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int a = 0;
-	int i = 0;
-	int c;
 
-	while (*(s1 + a) != '\0')
+	while (*s1 && *s2)
 	{
-		a++;
+		if (*s1 - *s2 != 0)
+		{
+			return (*s1 - *s2);
+		}
+		s1++;
+		s2++;
 	}
-	while (*(s2 + i) != '\0')
-	{
-		i++;
-	}
-	if (a == i)
-	{
-		return (0);
-	}
-	else
-	{
-		c = a - i;
-		return (c);
-	}
-
-
-
+	return (0);
 }
