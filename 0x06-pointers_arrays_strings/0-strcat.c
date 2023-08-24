@@ -10,7 +10,6 @@
 char *_strcat(char *dest, char *src)
 {
 	int a = 0;
-	int i = 0;
 	int c = 0;
 	int d = 0;
 
@@ -23,15 +22,10 @@ char *_strcat(char *dest, char *src)
 		c++;
 	}
 
-	for (i = 0; i < a; i++)
+	for (d = 0; d <= c; d++)
 	{
-		_putchar(dest[i]);
-	}
-	for (d = 0; d < c; d++)
-	{
-		_putchar(src[d]);
+		dest[a] = src[c];
 	}
 
-	_putchar('\0');
 	return (dest);
 }
