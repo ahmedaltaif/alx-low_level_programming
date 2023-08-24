@@ -5,7 +5,7 @@
 *
 * @dest: string
 * @src: string
-* Return: string
+* Return: dest
 */
 char *_strcat(char *dest, char *src)
 {
@@ -33,5 +33,5 @@ char *_strcat(char *dest, char *src)
 	}
 
 	_putchar('\0');
-	return (0);
+	return (dest);
 }
