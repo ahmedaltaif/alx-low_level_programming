@@ -5,7 +5,7 @@
 *
 * @str: array
 *
-* Return: b
+* Return: a
 */
 char *leet(char *str)
 {
