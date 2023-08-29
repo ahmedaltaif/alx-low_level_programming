@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strchr - function that copies memory area.
+ * *_strchr - a function that locates a character in a string.
  * @s: string
  * @c: char to find
  *
@@ -12,18 +12,14 @@
 char *_strchr(char *s, char c)
 
 {
-	char a;
 
-
-	for (a = 0; *(s + a) != '\0'; a++)
+	for (; s[0] != '\0'; s++)
 	{
-		if (*(s + a) == c)
-
-			break;
+		if (s[0] == c)
+			return (s);
+		else if (s[1] == c)
+			return (s + 1);
 
 	}
-	return ((s + a));
-
-
-
+	return (s + 1);
 }
