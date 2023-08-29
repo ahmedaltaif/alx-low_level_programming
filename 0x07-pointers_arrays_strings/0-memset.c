@@ -4,6 +4,7 @@
  *
  * @b: the address of memory to print
  * @s: the size of the memory to print
+ * @n: intger
  *
  * Return: (s).
  */
