@@ -5,7 +5,7 @@
  * @c: char to find
  *
  *
- * Return: (dest).
+ * Return: (s + a).
  */
 
 
