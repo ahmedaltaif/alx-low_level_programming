@@ -9,3 +9,4 @@ int square (int n, int b);
 int is_prime_number(int n);
 int is_prime_number(int n);
 int prime(int a, int b);
+int is_palindrome(char *s);
