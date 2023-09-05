@@ -24,21 +24,16 @@ int main(int argc, char *argv[])
 		if (cn - 25 >= 0)
 		{
 			cn = cn - 25;
-		}
-		if (cn - 10 >= 0)
+		} else if (cn - 10 >= 0)
 		{
 			cn = cn - 10;
-		}
-		if (cn - 5 >= 0)
+		} else if (cn - 5 >= 0)
 		{
 			cn = cn - 5;
-		}
-		if (cn - 2 >= 0)
+		} else if (cn - 2 >= 0)
 		{
 			cn = cn - 2;
-		}
-
-		if (cn - 1 >= 0)
+		} else if (cn - 1 >= 0)
 		{
 			cn = cn - 1;
 		}
