@@ -21,11 +21,18 @@ char *_strdup(char *str)
 		a++;
 	}
 
-	s = malloc(sizeof(*str));
+	s = malloc(sizeof(char) * a + 1);
 
-	for (i = 0; i <= a; i++)
+	if (s == NULL)
 	{
-		s[i] = str[i];
+		return (NULL);
+	}
+	else
+	{
+		for (i = 0; i <= a; i++)
+		{
+			s[i] = str[i];
+		}
 	}
 	return (s);
 
