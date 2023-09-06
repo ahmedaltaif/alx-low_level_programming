@@ -10,7 +10,9 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	int a, b, c;
+	int a = 0;
+	int b = 0;
+	int c = 0;
 	int d = 0;
 
 	if (s1 == NULL)
@@ -21,11 +23,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	for (a = 0; s1[a] != '\0'; a++)
+	while (s1[a] != '\0')
 	{
 		a++;
 	}
-	for (b = 0; s2[b] != '\0'; b++)
+	while (s2[b] != '\0')
 	{
 		b++;
 	}
