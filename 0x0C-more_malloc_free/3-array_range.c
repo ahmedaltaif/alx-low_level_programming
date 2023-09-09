@@ -21,17 +21,16 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	
 	while (max > min)
 	{
 		p[a] = max;
 		a--;
 		max--;
-	} 
+	}
 
 	if (p == NULL)
 		return (NULL);
 	p[a] = min;
-	
+
 	return (p);
 }
