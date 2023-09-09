@@ -4,23 +4,23 @@
 /**
  * *array_range - function that concatenates two strings.
  * @min: int
- * @max: int 
+ * @max: int
  * Return: pointer
  */
 int *array_range(int min, int max)
 {
-    int *p;
+	int *p;
 	int a;
 
-    a = max - min;
+	a = max - min;
 
-    p = malloc(sizeof(int) * (a + 1));
+	p = malloc(sizeof(int) * (a + 1));
 
 	if (min > max)
-    {
+	{
 		return (NULL);
-    }
-	
+	}
+
 	if (p == NULL)
 		return (NULL);
 	while (max > min)
