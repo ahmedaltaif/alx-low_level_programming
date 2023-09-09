@@ -21,14 +21,13 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
+	if (p == NULL)
+		return (NULL);
 
 	for (c = 0; min <= max; c++)
 	{
 		p[c] = min++;
 	}
-
-	if (p == NULL)
-		return (NULL);
 
 	return (p);
 }
