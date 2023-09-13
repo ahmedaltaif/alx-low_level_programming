@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 /**
- * free_dog - free dog 
- * @d: pointer 
+ * free_dog - free dog
+ * @d: pointer
  *
  */
 void free_dog(dog_t *d)
 {
 	if (d != NULL)
 	{
-		free(d);
 		free(d->owner);
 		free(d->name);
+		free(d);
 	}
 }
