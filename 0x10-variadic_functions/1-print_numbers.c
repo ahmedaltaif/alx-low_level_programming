@@ -5,6 +5,7 @@
  * @n: num of arg
  * @separator: separator
  * Description: returns the sum
+ * Return: void
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
