@@ -5,6 +5,7 @@
  *
  * @separator: - between strings
  * @n: - args number
+ * Return: void
  *
  */
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -13,6 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *p;
 	va_list args;
+
 	va_start(args, n);
 
 	if (separator == NULL)
