@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	rad = read(fid, str, letters);
-	
+
 	close(fid);
 	free(str);
 	if (rad == wrte)
