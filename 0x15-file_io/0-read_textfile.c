@@ -7,31 +7,45 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fid, rad, wrte;
+	int file;
+	ssize_t red, wrt;
 	char *str;
 
 	if (filename == NULL)
+	{
 		return (0);
-	str = malloc(letters * sizeof(char) + 1);
-	if (!str)
+	}
+	str = malloc(sizeof(char) * letters);
+	if (str == NULL)
+	{
 		return (0);
-	fid = open(filename, O_RDONLY);
-	if (rad == -1)
+	}
+	file = open(filename, O_RDONLY);
+	if (file < 0)
 	{
 		free(str);
 		return (0);
 	}
-	wrte = write(STDOUT_FILENO, str, rad);
-	if (fid == -1)
+	red = read(file, str, letters);
+	if (red < 0)
 	{
 		free(str);
 		return (0);
 	}
-	rad = read(fid, str, letters);
-
-	close(fid);
+	if (red > 0)
+		wrt = write(STDOUT_FILENO, str, red);
+	if (wrt < red)
+	{
+		free(str);
+		return (0);
+	}
+	wrt = close(file);
+	if (wrt < 0)
+	{
+		free(str);
+		return (0);
+	}
 	free(str);
-	if (rad == wrte)
-		return (wrte);
-	return (0);
+	
+	return (red);
 }
