@@ -7,32 +7,31 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *point;
-	ssize_t a;
-	ssize_t b;
-	int rint;
+	int fid, rad, wrte;
+	char *str;
 
-	if (!filename)
+	if (filename == NULL)
+		return (0);
+	str = malloc(letters * sizeof(char) + 1);
+	if (!str)
+		return (0);
+	fid = open(filename, O_RDONLY);
+	if (rad == -1)
 	{
+		free(str);
 		return (0);
 	}
-
-	rint = open(filename, O_RDONLY);
-	if (rint == -1)
+	wrte = write(STDOUT_FILENO, str, rad);
+	if (fid == -1)
 	{
+		free(str);
 		return (0);
 	}
-	point = malloc(sizeof(char) * (letters));
-	if (!point)
-	{
-		return (0);
-	}
-
-	a = read(rint, point, letters);
-
-	b = write(STDOUT_FILENO, point, a);
-
-	close(rint);
-	free(point);
-	return (b);
+	rad = read(fid, str, letters);
+	
+	close(fid);
+	free(str);
+	if (rad == wrte)
+		return (wrte);
+	return (0);
 }
