@@ -1,25 +1,5 @@
 #include "main.h"
 /**
- * error_file - copies the content of a file to another file..
- * @argv: arguments .
- * @file_from: file_from.
- * @file_to: file_to.
- * Return: 0.
- */
-
-void error_file(int file_from, int file_to, char *argv[])
-{
-	if (file_from == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	} else if (file_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
-	}
-}
-/**
  * main - check the code
  * @argc: arguments.
  * @argv: arguments.
@@ -70,4 +50,24 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 	return (0);
+}
+/**
+ * error_file - copies the content of a file to another file..
+ * @argv: arguments .
+ * @file_from: file_from.
+ * @file_to: file_to.
+ * Return: 0.
+ */
+
+void error_file(int file_from, int file_to, char *argv[])
+{
+	if (file_from == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	} else if (file_to == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+	}
 }
