@@ -3,7 +3,7 @@
 /**
  * pcheck - dex
  * @e_ident: A pointer to  ELF magic numbers.
- * Description: Magic 
+ * Description: Magic
  */
 void pcheck(unsigned char *e_ident)
 {
