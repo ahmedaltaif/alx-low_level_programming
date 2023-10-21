@@ -127,37 +127,37 @@ void posabi(unsigned char *e_ident)
 
 	switch (e_ident[EI_OSABI])
 	{
-		case ELFOSABI_HPUX:
-			printf("UNIX - HP-UX\n");
-			break;
-		case ELFOSABI_NETBSD:
-			printf("UNIX - NetBSD\n");
-			break;
-		case ELFOSABI_IRIX:
-			printf("UNIX - IRIX\n");
-			break;
 		case ELFOSABI_NONE:
-			printf("UNIX - System V\n");
-			break;
-		case ELFOSABI_FREEBSD:
-			printf("UNIX - FreeBSD\n");
-			break;
-		case ELFOSABI_TRU64:
-			printf("UNIX - TRU64\n");
-			break;
-		case ELFOSABI_STANDALONE:
-			printf("Standalone App\n");
-			break;
-		case ELFOSABI_ARM:
-			printf("ARM\n");
-			break;
-		case ELFOSABI_LINUX:
-			printf("UNIX - Linux\n");
-			break;
-		case ELFOSABI_SOLARIS:
-			printf("UNIX - Solaris\n");
-			break;
-		default:
+		printf("UNIX - System V\n");
+		break;
+	case ELFOSABI_HPUX:
+		printf("UNIX - HP-UX\n");
+		break;
+	case ELFOSABI_NETBSD:
+		printf("UNIX - NetBSD\n");
+		break;
+	case ELFOSABI_LINUX:
+		printf("UNIX - Linux\n");
+		break;
+	case ELFOSABI_SOLARIS:
+		printf("UNIX - Solaris\n");
+		break;
+	case ELFOSABI_IRIX:
+		printf("UNIX - IRIX\n");
+		break;
+	case ELFOSABI_FREEBSD:
+		printf("UNIX - FreeBSD\n");
+		break;
+	case ELFOSABI_TRU64:
+		printf("UNIX - TRU64\n");
+		break;
+	case ELFOSABI_ARM:
+		printf("ARM\n");
+		break;
+	case ELFOSABI_STANDALONE:
+		printf("Standalone App\n");
+		break;
+	default:
 		printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 	}
 }
@@ -243,7 +243,6 @@ void c_elf(int elf)
 		exit(98);
 	}
 }
-
 /**
  * main - Displays
  * @argv: pointers to the arguments.
@@ -265,7 +264,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	if (hder == NULL)
 	{
 		c_elf(a);
-		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't allocate memory\n");
 		exit(98);
 	}
 	b = read(a, hder, sizeof(Elf64_Ehdr));
@@ -273,12 +272,11 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	{
 		free(hder);
 		c_elf(a);
-		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read ELF header\n");
 		exit(98);
 	}
-
 	pcheck(hder->e_ident);
-	printf("ELF hder:\n");
+	printf("ELF Header:\n");
 	pmagic(hder->e_ident);
 	pclass(hder->e_ident);
 	pdata(hder->e_ident);
@@ -287,7 +285,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	pabi(hder->e_ident);
 	ptype(hder->e_type, hder->e_ident);
 	p_entry(hder->e_entry, hder->e_ident);
-
 	free(hder);
 	c_elf(a);
 	return (0);
