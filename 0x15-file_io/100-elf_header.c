@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * pChecks dex
+ * pcheck - dex
  * @e_ident: A pointer to  ELF magic numbers.
+ * Description: Magic 
  */
 void pcheck(unsigned char *e_ident)
 {
@@ -71,10 +72,10 @@ void pdata(unsigned char *e_ident)
 	}
 }
 /**
- * pmagic - Prints the magic numbers of an ELF hder.
- * @e_ident: A pointer to an array containing the ELF magic numbers.
+ * pmagic - magic numbers of an ELF hder.
+ * @e_ident: A pointer.
  *
- * Description: Magic numbers are separated by spaces.
+ * Description: Magic .
  */
 void pmagic(unsigned char *e_ident)
 {
