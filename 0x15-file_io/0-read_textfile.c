@@ -41,7 +41,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			free(sttr);
 			return (0);
 		}
-		wwrt = close(file);
+		wwrt = close(fil);
 		if (wwrt < 0)
 		{
 			free(sttr);
