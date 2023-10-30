@@ -27,7 +27,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		}
 		while (text_content[tall] != '\0')
 		{
-			tall++
+			tall++;
 		}
 		reed = write(fil, text_content, tall);
 		if (reed < 0)
