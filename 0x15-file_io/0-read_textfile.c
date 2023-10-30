@@ -21,13 +21,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			return (0);
 
 		fil = open(filename, O_RDONLY);
-		if (file < 0)
+		if (fil < 0)
 		{
 			free(sttr);
 			return (0);
 		}
 
-		rred = read(file, sttr, letters);
+		rred = read(fil, sttr, letters);
 		if (rred < 0)
 		{
 			free(sttr);
