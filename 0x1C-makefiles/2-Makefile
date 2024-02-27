@@ -1,8 +1,8 @@
-#Makefile
+# Makefile
 
 CC=gcc
-SRC=main.c school.c
-OBJ=$(SRC:%.c=%.o)
+SRC=$(wildcard *.c)
+OBJ=$(SRC:%.c=%.O)
 NAME=school
 
 all: $(OBJ)
