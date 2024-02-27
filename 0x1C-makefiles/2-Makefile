@@ -1,9 +1,9 @@
-# This is a Makefile
+#Makefile
 
 CC=gcc
 SRC=main.c school.c
-OBJ=$(SRC:%.c=%.O)
+OBJ=$(SRC:%.c=%.o)
 NAME=school
 
-all:
-	$(CC) $(OBJ) -o $(NAME)
+all: $(OBJ)
+		$(CC) $(OBJ) -o $(NAME)
