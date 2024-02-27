@@ -1,4 +1,5 @@
 #makefile
+
 CC=gcc 
 SRC=main.c school.c
 OBJ=$(SRC:%.c=%.o)
@@ -7,10 +8,13 @@ RM=rm
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+
+oclean:
+    $(RM) -f $(OBJ)
+
 clean:
     $(RM) -f *~ $(NAME)
-oclean:
-    $(RM) -r $(OBJ)
+
 fclean: clean oclean
 
 re: oclean all
