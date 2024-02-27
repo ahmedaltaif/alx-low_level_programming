@@ -1,0 +1,6 @@
+# makefile
+
+all :
+	CC = gcc
+	SRC := $(wildcard *.c)
+	$(CC) $(SRC) -o school
