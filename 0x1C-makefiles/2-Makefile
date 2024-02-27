@@ -1,0 +1,9 @@
+# This is a Makefile
+
+CC=gcc
+SRC=$(wildcard *.c)
+OBJ=$(wildcard *.o)
+NAME=$(SRC:%.C=%)
+
+all:
+	$(CC) $(SRC) $(OBJ) -o $(NAME)
